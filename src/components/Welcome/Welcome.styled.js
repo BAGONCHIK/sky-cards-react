@@ -36,16 +36,34 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 80px;
+  font-size: 60px;
   font-family: "MontserratSemiBold";
+
+  ${media.tablet`
+    font-size: 80px;
+  `}
 `;
 
 export const SubTitle = styled.div`
-  font-size: 50px;
+  margin-top: 10px;
+  font-size: 36px;
+
+  ${media.tablet`
+    font-size: 40px;
+  `}
+
+  ${media.desktop`
+    margin-top: 0px;
+    font-size: 50px;
+  `}
 `;
 
 export const Text = styled.div`
   margin-top: 40px;
-  font-size: 26px;
+  font-size: 20px;
   font-family: "MontserratLight";
+
+  ${media.tablet`
+    font-size: 26px;
+  `}
 `;
