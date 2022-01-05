@@ -22,9 +22,17 @@ export const BgImage = styled.img`
 
 export const Content = styled.div`
   margin: auto;
-  max-width: 700px;
+  max-width: 335px;
   text-align: center;
   color: white;
+
+  ${media.tablet`
+    max-width: 550px;
+  `}
+
+  ${media.desktop`
+    max-width: 700px;
+  `}
 `;
 
 export const Title = styled.div`
