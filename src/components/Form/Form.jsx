@@ -5,7 +5,8 @@ import * as S from "./Form.styled";
 const Form = () => {
   return (
     <S.Root>
-      <h2>asf</h2>
+      <S.Title>Контактная информация</S.Title>
+      <S.Title>Детали заказа</S.Title>
     </S.Root>
   );
 };
