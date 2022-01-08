@@ -3,9 +3,11 @@ import { images } from "../../assets/images";
 import { media } from "../../styles/media";
 
 export const Root = styled.div`
+  position: relative;
   width: 100%;
   background-image: url(${images.DarkSpace});
   padding-bottom: 30px;
+  z-index: 1;
 `;
 
 export const Title = styled.div`
