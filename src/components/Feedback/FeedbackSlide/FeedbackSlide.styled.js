@@ -33,4 +33,16 @@ export const Content = styled.div`
   font-size: 16px;
 `;
 
-export const Avatar = styled.img``;
+export const Avatar = styled.img`
+  display: flex;
+  width: 255px;
+  height: 255px;
+  margin: 0 auto;
+
+  ${media.tablet`
+    display: block;
+    width: 130px;
+    height: 130px;
+    margin: 0;
+  `}
+`;
