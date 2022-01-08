@@ -19,6 +19,11 @@ export const Title = styled.div`
     padding: 30px 0 30px 0;
     font-size: 50px;
   `}
+
+  ${media.desktop`
+    padding: 90px 0 60px 0;
+    font-size: 50px;
+  `}
 `;
 
 export const Slider = styled.div`
