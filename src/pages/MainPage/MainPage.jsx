@@ -1,8 +1,8 @@
 import React from "react";
-import Welcome from "../Welcome";
-import CardInfo from "../CardInfo";
-import Gallary from "../Gallary/Gallary";
-import Feedback from "../Feedback/Feedback";
+import Welcome from "../../components/Welcome";
+import CardInfo from "../../components/CardInfo";
+import Gallary from "../../components/Gallary/Gallary";
+import Feedback from "../../components/Feedback/Feedback";
 
 import * as S from "./MainPage.styled";
 

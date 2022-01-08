@@ -3,8 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from "../Header";
 import Footer from "../Footer/Footer";
-import MainPage from "../MainPage";
-// import ConstructorPage from "../ConstructorPage";
+import MainPage from "../../pages/MainPage";
+import ConstructorPage from "../../pages/ConstructorPage";
 
 import * as S from "./App.styled";
 
@@ -16,7 +16,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route exact path="/home" component={MainPage} />
-          {/* <Route path="/constructor" component={ConstructorPage} /> */}
+          <Route path="/constructor" component={ConstructorPage} />
         </Switch>
       </BrowserRouter>
       <Footer />
