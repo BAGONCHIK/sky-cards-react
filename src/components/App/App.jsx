@@ -4,6 +4,7 @@ import Header from "../Header";
 import CardInfo from "../CardInfo";
 
 import * as S from "./App.styled";
+import Gallary from "../Gallary/Gallary";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <Welcome />
       <CardInfo />
+      <Gallary />
     </S.Root>
   );
 };
