@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { images } from "../../assets/images";
 import { media } from "../../styles/media";
 
 export const Root = styled.div`
   width: 100%;
-  background: black;
+  background-image: url(${images.DarkSpace});
   padding-bottom: 30px;
 `;
 

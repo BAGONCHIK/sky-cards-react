@@ -7,7 +7,7 @@ export const Root = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 `;
 
 export const Title = styled.div`
