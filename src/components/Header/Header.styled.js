@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { headerHeight } from "../../styles/sizes";
-import { media } from "../../styles/media";
 
 export const Root = styled.div`
   position: relative;
