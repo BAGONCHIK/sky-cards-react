@@ -6,6 +6,7 @@ import CardInfo from "../CardInfo";
 import * as S from "./App.styled";
 import Gallary from "../Gallary/Gallary";
 import Feedback from "../Feedback/Feedback";
+import Footer from "../Footer/Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <CardInfo />
       <Gallary />
       <Feedback />
+      <Footer />
     </S.Root>
   );
 };
