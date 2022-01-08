@@ -9,7 +9,6 @@ export const Root = styled.div`
   width: 100%;
   min-height: calc(100vh - ${headerHeight}px);
   overflow: hidden;
-  z-index: -1;
 `;
 
 export const MyParticles = styled(Particles)`
@@ -22,7 +21,7 @@ export const BgImage = styled.img`
   height: 100vh;
   z-index: -1;
 
-  ${media.bigDesktop`
+  ${media.mediumDesktop`
     width: 100%;
   `}
 `;
