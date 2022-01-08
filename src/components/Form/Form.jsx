@@ -7,12 +7,16 @@ const Form = () => {
   return (
     <S.Root>
       <S.Title>Контактная информация</S.Title>
-      <Input label="Ваше имя" placeholder="Введите имя" />
-      <Input label="Ваш email" placeholder="Введите email" />
+      <Input name="name" label="Ваше имя" placeholder="Введите имя" />
+      <Input name="email" label="Ваш email" placeholder="Введите email" />
       <S.Title>Детали заказа</S.Title>
-      <Input label="Как подписать" placeholder="Теплые слова..." />
-      <Input label="Место" placeholder="Введите место" />
-      <Input label="Время" placeholder="Введите время" />
+      <Input
+        name="content"
+        label="Как подписать"
+        placeholder="Теплые слова..."
+      />
+      <Input name="place" label="Место" placeholder="Введите место" />
+      <Input name="time" label="Время" placeholder="Введите время" />
     </S.Root>
   );
 };
