@@ -16,6 +16,7 @@ const Welcome = () => {
           Делаем картины с точным расположением звёзд в момент особенного для
           вас события
         </S.Text>
+        <S.CreateButton to="/constructor">Создать свой дизайн</S.CreateButton>
       </S.Content>
     </S.Root>
   );

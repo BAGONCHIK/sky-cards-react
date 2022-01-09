@@ -13,7 +13,7 @@ SwiperCore.use([Pagination, Navigation]);
 
 const Feedback = () => {
   return (
-    <S.Root>
+    <S.Root id="feedback">
       <S.Title>Отзывы о нашей работе</S.Title>
       <Swiper
         slidesPerView={1}

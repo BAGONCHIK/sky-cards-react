@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { media } from "../../styles/media";
-import { headerHeight } from "../../styles/sizes";
 import Particles from "react-tsparticles";
+import { Link } from "react-router-dom";
 
 export const Root = styled.div`
   position: relative;
   display: flex;
   width: 100%;
-  min-height: calc(100vh - ${headerHeight}px);
+  min-height: 100vh;
   overflow: hidden;
 `;
 
@@ -72,4 +72,36 @@ export const Text = styled.div`
 export const MyParticles = styled(Particles)`
   position: absolute;
   z-index: 0;
+`;
+
+export const CreateButton = styled(Link)`
+  position: relative;
+  z-index: 9999;
+  margin-top: 40px;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    45deg,
+    #6ab1d7 0%,
+    #33d9de 50%,
+    #002878 100%
+  );
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, 0.35);
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+    cursor: pointer;
+  }
 `;
