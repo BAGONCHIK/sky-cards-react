@@ -1,14 +1,18 @@
 export const items = [
   {
+    to: "/",
+    title: "Главная",
+  },
+  {
     to: "/constructor",
     title: "Создать свой дизайн",
   },
   {
-    to: "/examples",
+    to: "/#examples",
     title: "Примеры работ",
   },
   {
-    to: "/feedback",
+    to: "/#feedback",
     title: "Отзывы",
   },
 ];

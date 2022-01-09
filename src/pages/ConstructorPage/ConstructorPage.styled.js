@@ -7,7 +7,8 @@ export const Root = styled.div`
   position: relative;
   display: flex;
   width: 100%;
-  min-height: calc(100vh - ${headerHeight}px);
+  min-height: 100vh;
+  padding-top: ${headerHeight}px;
   overflow: hidden;
 `;
 

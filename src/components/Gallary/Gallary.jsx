@@ -5,7 +5,7 @@ import * as S from "./Gallary.styled";
 
 const Gallary = () => {
   return (
-    <S.Root>
+    <S.Root id="examples">
       <S.Title>Примеры наших работ</S.Title>
       <S.Slider>
         <S.Photo src={images.Card5} />

@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import { headerHeight } from "../../styles/sizes";
+import { Link } from "react-router-dom";
 
 export const Root = styled.div`
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   width: 100%;
   height: ${headerHeight}px;
@@ -12,8 +15,6 @@ export const Root = styled.div`
 `;
 
 export const Title = styled.div`
-  display: flex;
-  align-items: center;
   margin-left: 20px;
   font-size: 30px;
   font-family: "MontserratSemiBold";
@@ -59,4 +60,10 @@ export const Hamburger = styled.div`
   & > span:nth-child(3) {
     width: 78%;
   }
+`;
+
+export const MyLink = styled(Link)`
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 `;

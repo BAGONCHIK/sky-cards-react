@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import Header from "../Header";
 
 import * as S from "./Nav.styled";
@@ -58,15 +57,16 @@ const Nav = ({ onClose }) => {
       </S.Cross>
       <S.NavItems>
         {items.map(({ title, to }, i) => (
-          <S.SecondaryNavItem
-            custom={i}
-            initial={{ opacity: 0, y: -25 }}
-            animate={itemAnimation}
-            key={title}
-            onClick={onClose}
-          >
-            <a href={to}>{title}</a>
-          </S.SecondaryNavItem>
+          <a href={to} key={title}>
+            <S.SecondaryNavItem
+              custom={i}
+              initial={{ opacity: 0, y: -25 }}
+              animate={itemAnimation}
+              onClick={onClose}
+            >
+              {title}
+            </S.SecondaryNavItem>
+          </a>
         ))}
       </S.NavItems>
     </S.Root>

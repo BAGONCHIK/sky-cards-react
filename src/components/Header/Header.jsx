@@ -11,7 +11,9 @@ const Header = ({ onMenuClick }) => {
         <span />
         <span />
       </S.Hamburger>
-      <S.Title>SkyCards</S.Title>
+      <S.MyLink to="/">
+        <S.Title>SkyCards</S.Title>
+      </S.MyLink>
       <S.Logo src={images.LogoNoBg} />
     </S.Root>
   );

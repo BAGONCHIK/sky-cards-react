@@ -9,7 +9,7 @@ const position = css`
   position: fixed;
   top: 0;
   left: 0;
-  ${size(`calc(200px + ${headerHeight}px)`, "100%")};
+  ${size(`calc(230px + ${headerHeight}px)`, "100%")};
 `;
 
 export const Root = styled(motion.div)`
@@ -84,8 +84,13 @@ export const NavItems = styled.ul`
   z-index: 12;
   top: calc(44px + ${headerHeight}px);
   left: 64px;
+  list-style: none;
+
+  & a {
+    text-decoration: none;
+  }
 
   ${media.desktop`
-    left: 88px;
+    left: 76px;
   `}
 `;
