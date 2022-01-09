@@ -2,9 +2,11 @@ import styled from "styled-components";
 import { media } from "../../styles/media";
 
 export const Root = styled.div`
+  position: relative;
   width: 100%;
   overflow: hidden;
   padding-bottom: 50px;
+  z-index: 1;
 
   ${media.desktop`
     padding: 0 170px 50px 170px;

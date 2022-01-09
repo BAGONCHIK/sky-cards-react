@@ -1,21 +1,24 @@
 import React from "react";
-import Welcome from "../Welcome";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 import Header from "../Header";
-import CardInfo from "../CardInfo";
+import Footer from "../Footer/Footer";
+import MainPage from "../../pages/MainPage";
+import ConstructorPage from "../../pages/ConstructorPage";
 
 import * as S from "./App.styled";
-import Gallary from "../Gallary/Gallary";
-import Feedback from "../Feedback/Feedback";
-import Footer from "../Footer/Footer";
 
 const App = () => {
   return (
     <S.Root>
-      <Header />
-      <Welcome />
-      <CardInfo />
-      <Gallary />
-      <Feedback />
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/home" component={MainPage} />
+          <Route path="/constructor" component={ConstructorPage} />
+        </Switch>
+      </BrowserRouter>
       <Footer />
     </S.Root>
   );
