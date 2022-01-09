@@ -16,6 +16,7 @@ const Form = () => {
         placeholder="Теплые слова..."
       />
       <Input name="place" label="Место" placeholder="Введите место" />
+      <Input name="date" label="Дата" placeholder="Введите дату" />
       <Input name="time" label="Время" placeholder="Введите время" />
     </S.Root>
   );
