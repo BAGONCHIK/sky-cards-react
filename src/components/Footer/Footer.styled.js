@@ -2,11 +2,13 @@ import styled from "styled-components";
 import { media } from "../../styles/media";
 
 export const Root = styled.footer`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: black;
+  z-index: 1000;
 `;
 
 export const FooterLogo = styled.img`
@@ -32,6 +34,8 @@ export const Button = styled.a`
   line-height: 20px;
   color: white;
   margin-bottom: 20px;
+  text-decoration: none;
+  outline: none;
 
   ${media.tablet`
     margin-right: 12px;
