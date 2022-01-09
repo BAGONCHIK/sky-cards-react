@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Input from "../Input";
 import Example from "./Example/Example";
-import { images } from "../../assets/images";
-
+import { useDispatch } from "react-redux";
+import { ExampleBgs } from "../../styles/helpers";
 import * as S from "./Form.styled";
+import { actions } from "../../models/form";
 
 const Form = () => {
+  const dispatch = useDispatch();
+
+  const handleChangeBg = useCallback(
+    (bg) => {
+      dispatch(actions.setBg(bg));
+    },
+    [dispatch]
+  );
+
   return (
     <S.Root>
       <S.Title>Контактная информация</S.Title>
@@ -26,11 +36,14 @@ const Form = () => {
         type="time"
       />
       <S.ExampleList>
-        <Example image={images.Bg0} />
-        <Example image={images.Bg1} />
-        <Example image={images.Bg2} />
-        <Example image={images.Bg3} />
-        <Example image={images.Bg4} />
+        {ExampleBgs.map((item) => (
+          <Example
+            id={item.id}
+            image={item.url}
+            onChangeBg={handleChangeBg}
+            key={item.id}
+          />
+        ))}
       </S.ExampleList>
     </S.Root>
   );

@@ -6,6 +6,7 @@ const initialState = {
   content: "",
   place: "",
   time: "",
+  bg: "",
 };
 
 const form = createSlice({
@@ -15,6 +16,9 @@ const form = createSlice({
     setForm(state, { payload }) {
       const { prop, value } = { ...payload };
       state[prop] = value;
+    },
+    setBg(state, { payload }) {
+      state.bg = payload;
     },
   },
 });

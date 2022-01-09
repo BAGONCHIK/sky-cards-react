@@ -2,10 +2,10 @@ import React from "react";
 
 import * as S from "./Example.styled";
 
-const Example = ({ image }) => {
+const Example = ({ image, onChangeBg, id }) => {
   return (
     <S.Root>
-      <S.Radio>Выбрать</S.Radio>
+      <S.Radio onClick={() => onChangeBg(id)}>Выбрать</S.Radio>
       <S.Image src={image} />
     </S.Root>
   );
