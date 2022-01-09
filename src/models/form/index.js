@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { images } from "../../assets/images";
 
 const initialState = {
   name: "",
@@ -6,7 +7,9 @@ const initialState = {
   content: "",
   place: "",
   time: "",
-  bg: "",
+  date: "",
+  bg: "1",
+  sky: `${images.DefaultSky}`,
 };
 
 const form = createSlice({
@@ -16,6 +19,9 @@ const form = createSlice({
     setForm(state, { payload }) {
       const { prop, value } = { ...payload };
       state[prop] = value;
+    },
+    setSky(state, { payload }) {
+      state.sky = payload;
     },
     setBg(state, { payload }) {
       state.bg = payload;

@@ -10,6 +10,7 @@ export const Root = styled.div`
   min-height: 100vh;
   padding-top: ${headerHeight}px;
   overflow: hidden;
+  justify-content: center;
 `;
 
 export const MyParticles = styled(Particles)`
