@@ -12,6 +12,11 @@ import Card9 from "./card9.jpg";
 import Client1 from "./client1.png";
 import Client2 from "./client2.png";
 import Client3 from "./client3.png";
+import Bg0 from "./bg-0.jpg";
+import Bg1 from "./bg-1.jpg";
+import Bg2 from "./bg-2.jpg";
+import Bg3 from "./bg-3.jpg";
+import Bg4 from "./bg-4.jpg";
 
 export const images = {
   DarkSpace,
@@ -28,4 +33,9 @@ export const images = {
   Client1,
   Client2,
   Client3,
+  Bg0,
+  Bg1,
+  Bg2,
+  Bg3,
+  Bg4,
 };

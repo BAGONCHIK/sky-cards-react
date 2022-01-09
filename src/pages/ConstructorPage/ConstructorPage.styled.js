@@ -19,7 +19,7 @@ export const MyParticles = styled(Particles)`
 
 export const BgImage = styled.img`
   position: absolute;
-  height: 100vh;
+  height: 100%;
   z-index: -1;
 
   ${media.mediumDesktop`

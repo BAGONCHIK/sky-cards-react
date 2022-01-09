@@ -10,6 +10,7 @@ export const Root = styled.div`
   background: white;
   border-radius: 20px;
   z-index: 1;
+  overflow: hidden;
 `;
 
 export const Title = styled.div`
@@ -17,4 +18,15 @@ export const Title = styled.div`
   text-align: center;
   font-family: "MontserratSemiBold";
   font-size: 22px;
+`;
+
+export const ExampleList = styled.div`
+  display: flex;
+  overflow-x: auto;
+  margin-top: 20px;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 `;

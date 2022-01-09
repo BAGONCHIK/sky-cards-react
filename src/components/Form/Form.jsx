@@ -1,5 +1,7 @@
 import React from "react";
 import Input from "../Input";
+import Example from "./Example/Example";
+import { images } from "../../assets/images";
 
 import * as S from "./Form.styled";
 
@@ -23,6 +25,13 @@ const Form = () => {
         placeholder="Введите время"
         type="time"
       />
+      <S.ExampleList>
+        <Example image={images.Bg0} />
+        <Example image={images.Bg1} />
+        <Example image={images.Bg2} />
+        <Example image={images.Bg3} />
+        <Example image={images.Bg4} />
+      </S.ExampleList>
     </S.Root>
   );
 };
