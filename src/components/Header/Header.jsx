@@ -3,10 +3,10 @@ import { images } from "../../assets/images";
 
 import * as S from "./Header.styled";
 
-const Header = () => {
+const Header = ({ onMenuClick }) => {
   return (
     <S.Root>
-      <S.Hamburger>
+      <S.Hamburger onClick={onMenuClick}>
         <span />
         <span />
         <span />
