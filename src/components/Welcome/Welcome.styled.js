@@ -92,7 +92,6 @@ export const CreateButton = styled(Link)`
   );
   background-position: 100% 0;
   background-size: 200% 200%;
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 300;
   color: white;
