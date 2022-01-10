@@ -1,10 +1,15 @@
-const axios = require("axios");
+const baseURL = "http://localhost:8000/api/";
 
-const instance = axios.default.create({
-  baseURL: "http://localhost:8000/api/",
-  timeout: 3000,
-});
+let headers = new Headers();
 
-export const createCard = (payload) => {
-  instance.post("card", payload);
+headers.append("Content-Type", "application/json");
+headers.append("Accept", "application/json");
+headers.append("GET", "POST", "OPTIONS");
+
+export const createCardApi = (payload) => {
+  return fetch(`${baseURL}card`, {
+    method: "POST",
+    headers: headers,
+    data: payload,
+  });
 };

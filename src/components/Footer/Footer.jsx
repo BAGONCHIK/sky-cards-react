@@ -8,7 +8,7 @@ const Footer = () => {
     <S.Root>
       <S.FooterLogo src={images.LogoNoBg} />
       <S.Buttons>
-        <S.Button href="#">Home</S.Button>
+        <S.Button href="/home#">Home</S.Button>
         <S.Button href="mailto:skycards@mail.ru">Связаться с нами</S.Button>
       </S.Buttons>
       <S.BigText>
@@ -18,7 +18,7 @@ const Footer = () => {
         немного тепла и красоты.
       </S.BigText>
       <S.Copyright>
-        Copyright © 2021 SkyCards, Inc. Все права защищены.
+        Copyright © 2022 SkyCards, Inc. Все права защищены.
       </S.Copyright>
     </S.Root>
   );

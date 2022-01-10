@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../styles/media";
 
 export const Root = styled.div`
   position: relative;
@@ -8,11 +9,15 @@ export const Root = styled.div`
   padding: 0 60px;
   background: white;
   width: 470px;
-  margin: 30px 0 50px 70px;
+  margin: 30px 0 50px 0px;
   border-radius: 20px;
   z-index: 1;
   overflow: hidden;
   border: 1px solid white;
+
+  ${media.desktop`
+    margin-left: 70px;
+  `}
 `;
 
 export const Bg = styled.img`
@@ -38,19 +43,22 @@ export const Content = styled.div`
 `;
 
 export const Place = styled.div`
-  margin-top: 20px;
+  height: 29px;
+  overflow: hidden;
+  margin-top: 10px;
   font-size: 24px;
   color: white;
 `;
 
 export const Date = styled.div`
-  margin-top: 10px;
+  margin-top: 5px;
+  padding-bottom: 20px;
   font-size: 18px;
   color: white;
 `;
 
 export const Time = styled.div`
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 16px;
   color: white;
 `;

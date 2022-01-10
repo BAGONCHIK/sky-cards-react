@@ -6,6 +6,7 @@ import { media } from "../../styles/media";
 export const Root = styled.div`
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   min-height: 100vh;
   padding-top: ${headerHeight}px;

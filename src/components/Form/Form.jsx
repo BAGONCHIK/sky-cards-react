@@ -5,9 +5,13 @@ import { useDispatch } from "react-redux";
 import { ExampleBgs } from "../../styles/helpers";
 import * as S from "./Form.styled";
 import { actions } from "../../models/form";
+import { useSelector } from "react-redux";
+import { formDataSelector } from "../../models/form/selectors";
 
 const Form = () => {
   const dispatch = useDispatch();
+
+  const data = useSelector(formDataSelector);
 
   const handleChangeBg = useCallback(
     (bg) => {
@@ -15,6 +19,10 @@ const Form = () => {
     },
     [dispatch]
   );
+
+  const handleShowResult = useCallback(() => {
+    dispatch(actions.showResult(data));
+  }, [data, dispatch]);
 
   return (
     <S.Root>
@@ -45,6 +53,7 @@ const Form = () => {
           />
         ))}
       </S.ExampleList>
+      <button onClick={handleShowResult}>Show</button>
     </S.Root>
   );
 };

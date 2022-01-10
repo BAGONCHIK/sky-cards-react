@@ -1,18 +1,18 @@
-import { takeEvery, all } from "redux-saga/effects";
+import { takeEvery, all, call } from "redux-saga/effects";
 
 import { actions } from "./index";
 
-import * as api from "api/family";
-import { request } from "utils/call";
+import { createCardApi } from "../../api/createForm";
 
-function* getCurrentFamily() {
+function* createCard({ payload }) {
   try {
+    const response = yield call(createCardApi(payload));
+    console.info(response);
   } catch (err) {
     yield console.error(err);
-    yield pushError("Something went wrong");
   }
 }
 
 export default function* () {
-  yield all([takeEvery(actions.getCurrentFamily.type, getCurrentFamily)]);
+  yield all([takeEvery(actions.showResult.type, createCard)]);
 }
