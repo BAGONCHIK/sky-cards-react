@@ -8,7 +8,7 @@ headers.append("Access-Control-Allow-Headers", "Content-type");
 headers.append("Access-Control-Allow-Origin", "http://localhost:3000/");
 headers.append("Access-Control-Allow-Methods", "POST");
 
-export const createCardApi = (payload) => {
+export const createCardApi = (payload) =>
   fetch(`${baseURL}card/`, {
     method: "POST",
     headers: headers,
@@ -16,4 +16,3 @@ export const createCardApi = (payload) => {
   })
     .then((response) => response.json())
     .catch((err) => console.error(err));
-};
