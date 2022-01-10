@@ -31,3 +31,10 @@ export const ExampleList = styled.div`
     height: 0;
   }
 `;
+
+export const LittleText = styled.div`
+  margin: 10px 0 0 auto;
+  font-family: "MontserratLight";
+  font-size: 10px;
+  color: grey;
+`;

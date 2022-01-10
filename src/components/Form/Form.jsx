@@ -7,6 +7,7 @@ import * as S from "./Form.styled";
 import { actions } from "../../models/form";
 import { useSelector } from "react-redux";
 import { formDataSelector } from "../../models/form/selectors";
+import { isMobile, isTablet } from "../../styles/media";
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -54,6 +55,9 @@ const Form = () => {
         ))}
       </S.ExampleList>
       <button onClick={handleShowResult}>Show</button>
+      {(isMobile() || isTablet()) && (
+        <S.LittleText>* Предпоказ карты ниже</S.LittleText>
+      )}
     </S.Root>
   );
 };
