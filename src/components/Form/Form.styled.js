@@ -38,3 +38,34 @@ export const LittleText = styled.div`
   font-size: 10px;
   color: grey;
 `;
+
+export const ShowBtn = styled.div`
+  position: relative;
+  z-index: 9999;
+  margin-top: 40px;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    45deg,
+    #6ab1d7 0%,
+    #33d9de 50%,
+    #002878 100%
+  );
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, 0.35);
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+    cursor: pointer;
+  }
+`;

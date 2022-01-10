@@ -37,7 +37,13 @@ const Form = () => {
         placeholder="Теплые слова..."
       />
       <Input name="place" label="Место" placeholder="Введите место" />
-      <Input name="date" label="Дата" placeholder="Введите дату" type="date" />
+      <Input
+        name="date"
+        label="Дата"
+        placeholder="Введите дату"
+        type="date"
+        max="2021-01-01"
+      />
       <Input
         name="time"
         label="Время"
@@ -54,7 +60,7 @@ const Form = () => {
           />
         ))}
       </S.ExampleList>
-      <button onClick={handleShowResult}>Show</button>
+      <S.ShowBtn onClick={handleShowResult}>Посмотреть результат</S.ShowBtn>
       {(isMobile() || isTablet()) && (
         <S.LittleText>* Предпоказ карты ниже</S.LittleText>
       )}
