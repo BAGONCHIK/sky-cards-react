@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { media } from "../../styles/media";
 
 export const Root = styled.div`
   position: relative;
@@ -26,6 +25,10 @@ export const ExampleList = styled.div`
   display: flex;
   overflow-x: auto;
   margin-top: 20px;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 `;
 
 export const LittleText = styled.div`

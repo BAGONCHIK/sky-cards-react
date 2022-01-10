@@ -33,6 +33,10 @@ export const Slider = styled.div`
   padding-bottom: 50px;
   display: flex;
   overflow-x: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 
   ${media.tablet`
     padding: 0 50px 50px 50px;
