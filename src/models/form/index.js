@@ -5,7 +5,7 @@ const initialState = {
   form: {
     name: "",
     email: "admin@example.com",
-    content: "",
+    text: "",
     place: "",
     time: "",
     date: "",

@@ -9,7 +9,7 @@ export const bgSelector = createSelector(
 
 export const contentSelector = createSelector(
   rootSelector,
-  (state) => state.form.content
+  (state) => state.form.text
 );
 
 export const placeSelector = createSelector(

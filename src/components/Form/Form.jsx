@@ -31,11 +31,7 @@ const Form = () => {
       <Input name="name" label="Ваше имя" placeholder="Введите имя" />
       <Input name="email" label="Ваш email" placeholder="Введите email" />
       <S.Title>Детали заказа</S.Title>
-      <Input
-        name="content"
-        label="Как подписать"
-        placeholder="Теплые слова..."
-      />
+      <Input name="text" label="Как подписать" placeholder="Теплые слова..." />
       <Input name="place" label="Место" placeholder="Введите место" />
       <Input
         name="date"
