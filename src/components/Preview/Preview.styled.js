@@ -14,6 +14,7 @@ export const Root = styled.div`
   z-index: 1;
   overflow: hidden;
   border: 1px solid white;
+  max-height: 700px;
 
   ${media.desktop`
     margin-left: 70px;
