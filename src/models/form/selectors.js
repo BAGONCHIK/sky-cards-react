@@ -4,7 +4,7 @@ const rootSelector = (state) => state.form;
 
 export const bgSelector = createSelector(
   rootSelector,
-  (state) => state.form.bg
+  (state) => state.form.bg_number
 );
 
 export const contentSelector = createSelector(

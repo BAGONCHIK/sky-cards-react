@@ -4,12 +4,12 @@ import { images } from "../../assets/images";
 const initialState = {
   form: {
     name: "",
-    email: "",
+    email: "admin@example.com",
     content: "",
     place: "",
     time: "",
     date: "",
-    bg: "1",
+    bg_number: "1",
   },
   sky: `${images.DefaultSky}`,
 };
@@ -27,7 +27,7 @@ const form = createSlice({
       state.sky = payload;
     },
     setBg(state, { payload }) {
-      state.form.bg = payload;
+      state.form.bg_number = payload;
     },
   },
 });
